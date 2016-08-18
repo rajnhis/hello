@@ -1,0 +1,6 @@
+add_action('init', 'change_page_permalink', -1);
+function change_page_permalink() {
+    global $wp_rewrite;
+    if ( strstr($wp_rewrite->get_page_permastruct(), '.html') != '.html' ) 
+        $wp_rewrite->page_structure = $wp_rewrite->page_structure . '.html';
+}
