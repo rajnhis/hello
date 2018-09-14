@@ -1,6 +1,6 @@
 <?php
 /**
- * Add the field to the checkout testing file test
+ * Add the field to the checkout testing file test testing
  **/
 add_action('woocommerce_after_order_notes', 'my_custom_checkout_field');
 
